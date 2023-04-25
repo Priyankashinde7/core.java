@@ -1,0 +1,35 @@
+abstract class RBI    // RBI 
+{
+	abstract void withdraw(); 
+	abstract void deposit();
+	abstract void credit();
+	void notification() {
+		System.out.println("Notification sent!!");
+	}
+}
+
+abstract class SBI extends RBI {
+	void withdraw() {
+		System.out.println("Money withdrawn");
+	}
+	void deposit() {
+		System.out.println("Money deposited");
+	}
+	abstract void credit();
+}
+
+class SBIOmerga extends SBI {
+	void credit() {
+		System.out.println("Money credited");
+	}
+
+}
+class Demo1 { // Bank creator
+	public static void main(String args[]) {
+		RBI bank1 = new SBIOmerga();
+		bank1.deposit();
+		bank1.withdraw();
+		bank1.credit();
+		bank1.notification();
+	}
+}

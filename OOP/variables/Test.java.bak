@@ -1,0 +1,13 @@
+class Test 
+{
+	static int i =20;
+	static A aObj = new A();
+	public static void main(String[] args) 
+	{
+
+
+		System.out.println("Hello World! "+A.x);
+		System.out.println("Hello World! "+i);
+
+	}
+}
