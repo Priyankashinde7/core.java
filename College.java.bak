@@ -1,0 +1,18 @@
+class College 
+{
+	public static void main(String[] args) 
+	{
+		Student s1= new Student();
+		System.out.println(sno=11);
+		System.out.println(sname="priya");
+		System.out.println(course="cs");
+		System.out.println(fee=2000);
+
+
+		Student s2= new Student();
+		System.out.println(sno=12);
+		System.out.println(sname="vaibhav");
+		System.out.println(course="cs");
+		System.out.println(fee=2000.00);
+	}
+}
