@@ -1,0 +1,41 @@
+class Test2 
+{
+	int x = 40;
+	double a= 50;
+	static int i =20;
+	static A aObj = new A();
+	A aObj1 = new A();
+
+	public static void main(String[] args) 
+	{
+		Test2 test = new Test2();
+		A.x =50;
+		aObj.y=70.5;
+		//A.f=80.5f; CE
+		aObj.f=49.5f;
+		test.aObj1.f=14.2f;
+		test.aObj1.x=5;
+		test.aObj1.y=21.0;
+		//Test2.x =23;
+		//Test2.a =46.3;
+		Test2.i =43;
+		test.x=4;
+		test.a=9;
+		System.out.println("A.x "+A.x); // 5
+		System.out.println("Hello World! "+aObj.x); //5
+		System.out.println("Hello World! "+A.y); //21.0
+		System.out.println("Hello World! "+aObj.y);//21.5
+//		System.out.println("Hello World! "+A.f); CE
+		System.out.println("Hello World! "+aObj.f);//49.5
+		System.out.println("Hello World! "+i);//43
+
+		System.out.println("Hello World! "+Test2.i);//43
+		System.out.println("Hello World! "+test.x);//4
+		System.out.println("Hello World! "+test.a);//9
+		System.out.println("Hello World! "+test.aObj1.y);//21.0
+//		System.out.println("Hello World! "+A.f); CE
+		System.out.println("Hello World! "+test.aObj1.f);//14.2
+		System.out.println("Hello World! "+test.aObj1.x);//5
+
+	}
+}
